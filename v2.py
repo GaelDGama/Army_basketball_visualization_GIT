@@ -19,7 +19,7 @@ columns_to_drop = []
 
 st.title('Army Basketball Visualization')
 #How you get the army player
-with st.form('Select your players & stats'):
+with st.form('Select your players & stats (3 stats at least)'):
   options = df.columns.to_list()
   selection = st.pills("What Statisitcs would you like to see", options[3:], selection_mode="multi")
 
@@ -35,11 +35,8 @@ with st.form('Select your players & stats'):
   Pro_player = st.selectbox("select pro player", list_of_player)
 
   submit = st.form_submit_button('Confirm choices')
+  
   if submit:
-
-
-    
-
 
 
     for i in options[:]:
