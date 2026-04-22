@@ -5,7 +5,7 @@ import streamlit as st
 
 df = pd.read_csv('Army_mens_basketball.csv')
 
-dfpro = pd.read_csv('Pro_Players_College.csv')
+dfpro = pd.read_csv('nba_college_stats_per100.csv')
 
 
 columns_to_drop = ['Pos', 'MP','Awards',]
@@ -69,14 +69,14 @@ with st.form('Select your players & stats (3 stats at least)'):
           theta=selection,
           fill='toself',
           name=player_Army,
-          fillcolor='rgba(0, 0, 255, 0.3)'
+          fillcolor='rgba(0, 0, 255, 0.5)'
     ))
     fig.add_trace(go.Scatterpolar(
           r=r_Pro_player,
           theta=selection,
           fill='toself',
           name=Pro_player,
-          fillcolor='rgba(255, 0, 0, 0.3)'
+          fillcolor='rgba(255, 0, 0, 0.5)'
     ))
 
     fig.update_layout(
@@ -85,7 +85,7 @@ with st.form('Select your players & stats (3 stats at least)'):
           visible=True,
           range=[0,r_range]
         )),
-      showlegend=False
+      showlegend=True
     )
 
     st.plotly_chart(fig)
