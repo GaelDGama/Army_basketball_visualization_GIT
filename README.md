@@ -53,7 +53,7 @@ cd YOUR_REPO
 2. Run the Streamlit app:
 
 ```bash
-streamlit run v2.py
+streamlit run streamlit_app.py
 ```
 
 3. Open the local URL provided in your terminal (usually http://localhost:8501)
