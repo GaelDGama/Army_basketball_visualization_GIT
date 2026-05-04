@@ -1,7 +1,5 @@
 # 🏀 Army Basketball Visualization
 
-🚧 **Work in Progress** 🚧
-
 This project is a Streamlit web application that allows users to compare Army basketball players with professional players using interactive radar charts. The goal is to explore statistical similarities and differences between players in a clean, visual way.
 
 ---
@@ -13,7 +11,7 @@ This project is a Streamlit web application that allows users to compare Army ba
 - Choose which statistics to visualize
 - Generate interactive radar charts using Plotly
 - Simple and intuitive interface powered by Streamlit
-
+- view team stats for top 5 players on offense, defense and shooting
 ---
 
 ## 🛠️ Technologies Used
@@ -66,10 +64,13 @@ streamlit run v2.py
 
 ```
 .
-├── v2.py
+├── Player.py
 ├── Army_mens_basketball.csv
 ├── Pro_Players_College.csv
 ├── requirements.txt
+├── Teams.py
+├── streamlit_app.py
+├── patriot_league_per_game.csv
 └── README.md
 ```
 
